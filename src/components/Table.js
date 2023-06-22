@@ -6,12 +6,12 @@ import { SocketServer } from '../functions/SocketServer';
 
 
 const InvoiceTable = (props) => {
-    console.log("Executing InvoiceTable")
+    
     const socketServer = new SocketServer('pdfGenerated')
     const [tableData, setTableData] = useState([])
 
     const handleDownload = (tableRow) => {
-        console.log("wewewewew", tableRow)
+        
         tableRow.IsNewFile = false
         socketServer.EmitDataToSocket('requestPDF', tableRow)
     }

@@ -23,7 +23,6 @@ const Dashboard = () => {
             }
                   
             const response = await axios.post('http://localhost:3100/api/rest/invoicegenerator/readinvoice', readData);
-            console.log(response.data.output)
             setData(response.data.output);
         } catch (error) {
             console.error('Error fetching data:', error);

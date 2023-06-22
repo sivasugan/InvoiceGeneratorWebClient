@@ -4,7 +4,7 @@ import { FaSignInAlt, FaFileAlt } from 'react-icons/fa';
 import { Navigate, useNavigate } from 'react-router-dom'
 
 function TopBar() {
-  console.log("Executing topbar")
+  
   const navigate = useNavigate()
 
     const handleNavigation = (props) => {
