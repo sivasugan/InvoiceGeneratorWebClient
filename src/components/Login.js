@@ -12,7 +12,7 @@ const Login = (props) => {
     const navigate = useNavigate()
 
     const checkCredentials = (props) => {
-        if (emailId === 'sivasugan@gmail.com' && password === 'sugan') {
+        if (emailId === 'sivasugan@gmail.com' && password === 'password') {
             setIsAuthenticated(true)
             navigate('/dashboard')
             console.log("Authenticated")
